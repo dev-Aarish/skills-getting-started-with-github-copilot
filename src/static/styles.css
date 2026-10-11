@@ -58,20 +58,93 @@ section h3 {
 }
 
 .activity-card {
-  margin-bottom: 15px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  margin-bottom: 18px;
+  padding: 18px;
+  border: 1px solid #e1e6f0;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #fff, #f8faff);
+  box-shadow: 0 3px 10px rgba(26, 35, 126, 0.06);
 }
 
 .activity-card h4 {
-  margin-bottom: 10px;
-  color: #0066cc;
+  margin-bottom: 8px;
+  color: #1a237e;
+  font-size: 1.1rem;
 }
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+.participants-section {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid #e1e6f0;
+}
+
+.participants-section h5 {
+  margin-bottom: 8px;
+  color: #3949ab;
+  font-size: 0.9rem;
+}
+
+.participants-list {
+  padding-left: 0;
+  list-style: none;
+  color: #46516a;
+}
+
+.participants-list li {
+  padding: 3px 0 3px 2px;
+  overflow-wrap: anywhere;
+}
+
+.participants-list .participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.participant-item span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.unregister-button {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 4px;
+  background: transparent;
+  color: #c62828;
+}
+
+.unregister-button:hover {
+  background-color: #ffebee;
+  color: #b71c1c;
+}
+
+.unregister-button:focus-visible {
+  outline: 2px solid #1a237e;
+  outline-offset: 2px;
+}
+
+.delete-icon {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
+.participants-list .empty-participants {
+  color: #7b8498;
+  font-style: italic;
 }
 
 .form-group {
